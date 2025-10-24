@@ -1,0 +1,25 @@
+# -------------------------------------------------------------------------
+# 
+# Copyright (c) 2025 Athiththan Kathirgamasegaran
+# Licensed under the MIT License. See LICENSE file in the project root for
+# full license information.
+#
+# Azure Environment Start & Stop Automation
+# Terraform configuration for automated environment management
+# 
+# -------------------------------------------------------------------------
+
+# Rename this file to conf.auto.tfvars and fill in your Azure details
+
+project     = "envautomation"
+environment = "dev"
+location    = "eastus2"
+padding     = "001"
+
+# Feature flags
+start_stop_vm                = true
+start_stop_vmss              = true
+start_stop_firewall          = true
+start_stop_aks               = true
+start_stop_app_gateway       = true
+enable_disable_db_auto_pause = true
